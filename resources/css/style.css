@@ -15,16 +15,16 @@ header {
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+nav {
+  color: white;
   background-color: cadetblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container2 {
-  max-width: 960px;
-  margin: 0 auto;
-}
 .flex {
   display: flex;
 }
@@ -118,7 +118,11 @@ ul li {
 
 .supporting2 {
   display: flex;
-  justify-content: center;
+  /*justify-content: space-between;*/
+}
+
+#appoint {
+  margin-left: 90px;
 }
 
 footer {
@@ -129,7 +133,7 @@ footer {
 
 footer img {
   height: 1.5rem;
-  margin: 4rem 1rem 4rem 4rem;
+  margin: 4rem 1rem 4rem 2rem;
   vertical-align: middle;
 }
 
@@ -137,4 +141,20 @@ footer span {
   font-family: helvetica;
   font-size: 1rem;
   margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+html {
+  font-size: 16px;
+}
+header {
+  padding: 0;
+}
+footer {
+  min-width: 100%;
+}
+.container {
+  min-width: 100%;
+}
+
 }
