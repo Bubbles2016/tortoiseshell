@@ -45,13 +45,16 @@ header span {
   display: inline-flex;
 }
 
-ul li {
+.desktop-nav li {
   margin: 1rem 2rem 1rem 0;
   color: white;
   text-decoration: none;
   display: inline;
 }
-
+.responsive-nav {
+  padding: 0.75rem 0;
+  display: none;
+}
 .mini-banner {
   background-color: white;
   padding: 1.5rem 5rem;
@@ -89,7 +92,6 @@ ul li {
   width: 5rem;
   /*margin-top: 15px;*/
 }
-
 
 .supporting {
   display: flex;
@@ -156,5 +158,50 @@ footer {
 .container {
   min-width: 100%;
 }
+.mini-banner {
+  top: 15rem;
+  background-color: white
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+  line-height: 2.4;
+  float: right;
+  width: 400px;
+}
+
+header {
+  height: 22rem;
+}
+
+.mini-banner span {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.33rem;
+  height: 1.2;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 580px) {
+.desktop-nav {
+    display: none;
+}
+
+header span {
+  display: none;
+}
+
+.responsive-nav {
+  display: block;
+}
+.responsive-nav li {
+  list-style: none;
+  margin-right: 5px;
+}
+
+/*.mini-banner {
+  width: 100%;
+  top: 17.3rem;
+}*/
 
 }
