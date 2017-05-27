@@ -164,7 +164,7 @@ footer {
   min-width: 100%;
 }
 .mini-banner {
-  top: 15rem;
+  /*top: 15rem;*/
   background-color: white
   padding: 0.75rem 4rem;
   margin-top: 5rem;
@@ -172,7 +172,7 @@ footer {
   line-height: 2.4;
   float: right;
   width: 400px;
-  margin-left: 400px;
+  margin-left: 20%;
 }
 
 header {
@@ -188,7 +188,19 @@ header {
 }
 }
 
-@media only screen and (max-width: 580px) {
+/*@media only screen and (max-width: 800px) {
+  .mini-banner {
+    top: 15rem;
+    background-color: white
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    line-height: 2.4;
+    float: right;
+    width: 400px;
+  }
+}*/
+@media only screen and (max-width: 600px) {
 .desktop-nav {
     display: none;
 }
@@ -205,9 +217,26 @@ header span {
   margin-right: 5px;
 }
 
-/*.mini-banner {
+.mini-banner {
+  border: 1px solid red;
+  height: 1rem;
   width: 100%;
-  top: 17.3rem;
-}*/
+  margin-left: 0;
+  margin-right:0;
+  margin-top: 7rem;
+  color: black;
+}
+
+header {
+  height: 17rem;
+}
+
+.mini-banner span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  padding: 1rem 4rem;
+}
 
 }
