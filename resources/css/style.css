@@ -1,7 +1,11 @@
 html {
   font-size: 18px;
   line-height: 1.4;
+  box-sizing: border-box;
 }
+/**, *:before, *:after {
+  box-sizing: inherit;
+}*/
 
 header {
   height: 30rem;
@@ -59,22 +63,28 @@ header span {
   padding: 0.75rem 0;
   display: none;
 }
+
+.responsive-nav li {
+  font-size: 1.5rem;
+}
 .mini-banner {
   background-color: white;
-  padding: 1.5rem 5rem;
+  padding: 0 5rem;
   margin-top: 10rem;
-  margin-right: 5rem;
-  line-height: 2.4;
-  float: right;
-  width: 450px;
+  margin-right: -2rem;
+  line-height: 1.4;
+  /*float: right;*/
+  /*width: 450px;*/
+
 }
 
-.mini-banner span {
+.mini-banner h4 {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 2rem;
   height: 1.2;
   color: black;
+  text-align: center;
 }
 
 .service {
@@ -165,13 +175,15 @@ footer {
 }
 .mini-banner {
   /*top: 15rem;*/
+  /*border: 1px solid red;*/
   background-color: white
-  padding: 0.75rem 4rem;
+  /*padding: 0.75rem 4rem;*/
+  /*margin-left: 100px;*/
   margin-top: 5rem;
-  margin-right: 2rem;
-  line-height: 2.4;
+  margin-right: -3.5rem;
+  line-height: 1.2;
   float: right;
-  width: 400px;
+  /*width: 400px;*/
   margin-left: 20%;
 }
 
@@ -179,7 +191,7 @@ header {
   height: 22rem;
 }
 
-.mini-banner span {
+.mini-banner h4 {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 1.33rem;
@@ -188,18 +200,6 @@ header {
 }
 }
 
-/*@media only screen and (max-width: 800px) {
-  .mini-banner {
-    top: 15rem;
-    background-color: white
-    padding: 0.75rem 4rem;
-    margin-top: 5rem;
-    margin-right: 2rem;
-    line-height: 2.4;
-    float: right;
-    width: 400px;
-  }
-}*/
 @media only screen and (max-width: 600px) {
 .desktop-nav {
     display: none;
@@ -212,31 +212,73 @@ header span {
 .responsive-nav {
   display: block;
 }
+
 .responsive-nav li {
   list-style: none;
   margin-right: 5px;
 }
-
-.mini-banner {
-  border: 1px solid red;
-  height: 1rem;
-  width: 100%;
-  margin-left: 0;
-  margin-right:0;
-  margin-top: 7rem;
-  color: black;
-}
-
 header {
   height: 17rem;
 }
-
-.mini-banner span {
-  font-family: Helvetica;
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-  padding: 1rem 4rem;
+.mini-banner {
+  /*border: 1px solid red;*/
+  background-color: white;
+  padding: 0;
+  margin-top: 7.0rem;
+  line-height: 0.1;
+  width: 100%;
+  margin-left: 0;
+  margin-right:0;
+  margin-bottom: 0;
 }
 
+.mini-banner h4 {
+  font-family: Helvetica;
+  /*font-size: 1rem;*/
+  color: black;
+  text-align: center;
+  padding-top: 0.125rem;
+  padding-right: 0.125rem;*/
+}
+
+.supporting.container {
+  display: block;
+}
+.service {
+  /*border: 1px solid red;*/
+  margin: 0 auto;
+  margin-bottom: 3.77rem;
+  font-family: helvetica;
+  font-size: 0.77rem;
+}
+#paper-img, .service-img {
+  margin-top: 3.77rem;
+}
+#description, #description2, #description3 {
+  padding-top: 15px;
+}
+
+.supporting2.container {
+  display: block;
+}
+
+.info {
+  width :100%;
+}
+.title {
+  min-width: 100%;
+}
+
+#appoint {
+  margin-left: 0;
+}
+footer {
+  text-align: center;
+}
+.supporting2 p {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-family: helvetica;
+  font-size: 0.77rem;
+}
 }
