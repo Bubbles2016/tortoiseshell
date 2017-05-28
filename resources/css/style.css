@@ -213,7 +213,7 @@ header {
 .mini-banner {
   background-color: white;
   padding: 0;
-  margin-top: 7.0rem;
+  margin-top: 8.0rem;
   line-height: 0.1;
   width: 100%;
   margin-left: 0;
@@ -269,4 +269,8 @@ footer {
   font-family: helvetica;
   font-size: 0.77rem;
 }
+nav {
+  max-height: 4rem;
+}
+
 }
